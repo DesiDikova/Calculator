@@ -1,0 +1,67 @@
+:root {
+  --background-color: #efefef;
+  --background-color-calculator: #131a26;
+  --background-color-display: #e71259;
+  --color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+  color: rgb(20, 19, 19);
+}
+
+.App {
+  width: 350px;
+  margin: 100px auto;
+}
+
+.calculator {
+  background-color: var(--background-color);
+  border-radius: 18px;
+  width: 100%;
+  box-shadow: 1px 1px 8px var(--background-color-calculator);
+  overflow: hidden;
+}
+
+.display {
+  color: var(--color);
+  background-color: var(--background-color-calculator);
+  overflow: hidden;
+  text-align: right;
+  padding: 22px;
+  font-size: 22px;
+}
+
+button {
+  border: none;
+  color: var(--color);
+  padding: 16px;
+  font-size: 22px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 5s;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+.operators {
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 0%;
+  background-color: var(--background-color-display);
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  width: 116.5px;
+  background-color: var(--background-color-calculator);
+}
